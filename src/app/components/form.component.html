@@ -1,6 +1,6 @@
 <h1>Test password strength</h1>
 
-<input type="password" [(ngModel)]="password" placeholder="Enter password" (input)="calculateStrength()">
+<input type="password" [(ngModel)]="password" placeholder="Please enter the password" (input)="calculateStrength()">
 <div>
   <div [ngStyle]="{'background-color': getColor(0)}"></div>
   <div [ngStyle]="{'background-color': getColor(1)}"></div>
