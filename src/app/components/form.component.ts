@@ -15,7 +15,7 @@ export class FormComponent{
     if (this.password.length < 8) {
       return 'red';
     }
-    const hasLetters = /[a-zA-Z]/.test(this.password);
+    const hasLetters = /[a-zA-Zа-яА-ЯґҐєЄїЇіІ0]/.test(this.password);
     const hasNumbers = /[0-9]/.test(this.password);
     const hasSymbols = /[!@#$%^&*()]/.test(this.password);
 
